@@ -1,6 +1,4 @@
-![C CI](https://github.com/EV-Aero/TCP-server-assignment/workflows/C%20CI/badge.svg)
-
-SimpleUDPTCP
+SimpleuUDPTCP
 =============
 
 Simple UDP and TCP servers and clients. Support authentication and file exchange.
@@ -63,4 +61,4 @@ tcpclient [IP_server] [server_port]
 There is known bug we plan to fix, in the send of files from TCP client to the TCP server. We did not manage
 to find a way to stop listening on the socket so the program stalls there after sending all the data of the
 file. The file is sent correctly and by terminating either the client or the server after some time everything
-should be working fine as an ugly workaround.
+should be working fine as an ungly workaround.

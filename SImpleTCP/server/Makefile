@@ -1,6 +1,7 @@
 CC=gcc -w -s
 CFLAGS=-std=c99 -w
 HEADERS=$(wildcard *.h)
+PYTHON_TESTS = $(wildcard tests/test*.py)
 
 %.o: %.c $(HEADERS)
 	@$(CC) $(CFLAGS) -c $< -o $@
@@ -21,7 +22,7 @@ tcpserver : tcpserver.o
 
 
 	@echo -e "\e[01;34mBuild was successful.\e[00m"
-	@make clean
+	@make install
 
 
 clean:
@@ -31,3 +32,13 @@ clean:
 start:
 	@./udpserver login 2400 &
 	@./tcpserver 2424 &
+move:
+	@mv tcpclient ../client/
+	@mv udpclient ../client/
+
+check: $(PYTHON_TEST)
+
+$(PYTHON_TEST):
+	#TODO
+
+install: tcpserver clean move
