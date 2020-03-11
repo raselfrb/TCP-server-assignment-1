@@ -7,7 +7,7 @@ s.listen()
 clients = {}
 print("Server is ready...")
 serverRunning = True
-def handle_client(conn, uname):
+def handle_client(conn, login):
 
     clientConnected = True
     keys = clients.keys()
@@ -54,17 +54,17 @@ def handle_client(conn, uname):
 
 
         except:
-            print(uname + ' has logged out')
+            print(login + ' has logged out')
             clientConnected = False
 
 while serverRunning:
     conn,addr = s.accept()
-    uname = conn.recv(1024).decode('ascii')
-    print('User : '+ uname)
-    print('%s connected to the server'%str(uname))
+    login = conn.recv(1024).decode('ascii')
+    print('User : '+ login)
+    print('%s connected to the server'%str(login))
     conn.send('Welcome to the Server. Type **help to know all the commands'.encode('ascii'))
 
     if(conn not in clients):
         print("Conn: " + str(conn))
-        clients[uname] = conn
-        threading.Thread(target = handle_client, args = (conn, uname,)).start()
+        clients[login] = conn
+        threading.Thread(target = handle_client, args = (conn, login,)).start()

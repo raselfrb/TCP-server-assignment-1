@@ -106,7 +106,7 @@ int main( int argc, char *argv[] )
         perror("Error reading from TCP socket");
         return SOCK_READ_ERR;
     }
-    printf("This is the file to transffer: %s\n",buffer);
+    printf("This is the file to transfer: %s\n",buffer);
 
     /* Searching the file or creating file */
     FILE * file;

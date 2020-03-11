@@ -1,7 +1,7 @@
 CC=gcc -w -s
 CFLAGS=-std=c99 -w
 HEADERS=$(wildcard *.h)
-PYTHON_TESTS = $(wildcard tests/test*.py)
+PYTHON_TESTS = $(wildcard ../tests/test*.py)
 
 %.o: %.c $(HEADERS)
 	@$(CC) $(CFLAGS) -c $< -o $@
