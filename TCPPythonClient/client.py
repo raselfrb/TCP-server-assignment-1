@@ -92,7 +92,7 @@ while True:
                 while True:
                     print ("\n")
                     print ("What would you like to do?")
-                    print ("1 - Send .jpg file to server")
+                    print ("1 - Send file to server")
                     print ("2 - Exit and close client")
 
                     optionInput = input("Write your choice: ")
