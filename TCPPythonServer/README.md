@@ -10,3 +10,5 @@ Currently the program are able to:
 
 The code for this can be found in the two TCPPython folders, Server
 and client has to be ran in two different CLIs or IDEs
+
+There are still many bugs in this code and many ways for this program to crash!
