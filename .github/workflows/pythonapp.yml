@@ -37,4 +37,5 @@ jobs:
         pytest
     - name: build with pyinstaller
       run: |
-        pyinstaller arbeitszeit.py
+        pyinstaller TCPPythonClient/client.py
+        pyinstaller TCPPythonServer/server.py
