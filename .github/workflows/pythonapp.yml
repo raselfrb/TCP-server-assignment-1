@@ -34,7 +34,8 @@ jobs:
     - name: Test with pytest
       run: |
         pip install pytest
-        pytest
+        pytest TCPPythonClient/client.py
+        pytest TCPPythonServer/server.py
     - name: build with pyinstaller
       run: |
         pyinstaller TCPPythonClient/client.py
