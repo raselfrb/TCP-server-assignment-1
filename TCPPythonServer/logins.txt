@@ -1,3 +1,4 @@
 niklas:admin
 adrian:hej
+wael:admin
 
