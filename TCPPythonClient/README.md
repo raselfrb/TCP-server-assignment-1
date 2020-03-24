@@ -1,19 +1,15 @@
 # TCP python server / client
 > TCP communication through python, sending recieving files, using user logins.
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
-
 ## Release History
 none so far
 
 # TCP-server-assignment
 Currently the program is able to:
-	* Register new user
-	* Check if username is taken
-	* Check if username and password is correct
-	* Send files with the extension of .jpg and .txt
+* Register new user
+* Check if username is taken
+* Check if username and password is correct
+* Send files with the extension of .jpg and .txt
 
 The code for this can be found in the two TCPPython folders, Server
 and client has to be ran in two different CLIs or IDEs
