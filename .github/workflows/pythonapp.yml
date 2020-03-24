@@ -4,11 +4,10 @@
 name: Python application
 
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
-
+    push:
+    # Sequence of patterns matched against refs/tags
+      tags:
+        - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
 jobs:
   build:
 
@@ -24,6 +23,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
+        pip install pyinstaller
     - name: Lint with flake8
       run: |
         pip install flake8
@@ -35,3 +35,6 @@ jobs:
       run: |
         pip install pytest
         pytest
+    - name: build with pyinstaller
+      run: |
+        pyinstaller arbeitszeit.py
