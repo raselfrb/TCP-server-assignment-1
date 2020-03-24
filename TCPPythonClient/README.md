@@ -1,8 +1,5 @@
 # TCP-server-assignment
-Rewrote some of he code from previous and moved it to be handled on
-serverside instead of client side.
-
-Currently the program are able to:
+Currently the program is able to:
 	- Register new user
 	- Check if username is taken
 	- Check if username and password is correct
@@ -11,4 +8,6 @@ Currently the program are able to:
 The code for this can be found in the two TCPPython folders, Server
 and client has to be ran in two different CLIs or IDEs
 
-There are still many bugs in this code and many ways for this program to crash!
+TODO:
+fix various crashes
+create function for removing users from the serverside (with admin account login perhaps)
