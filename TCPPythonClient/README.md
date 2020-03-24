@@ -15,5 +15,5 @@ The code for this can be found in the two TCPPython folders, Server
 and client has to be ran in two different CLIs or IDEs
 
 TODO:
-	* fix various crashes
-	* create function for removing users from the serverside (with admin account login perhaps)
+* fix various crashes
+* create function for removing users from the serverside (with admin account login perhaps)
