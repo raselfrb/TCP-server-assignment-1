@@ -8,9 +8,6 @@ Currently the program is able to:
 * Check if username and password is correct
 * Send files with the extension of .jpg and .txt
 
-## Release History
-none so far
-
 ## Setup
 The code for this can be found in the two TCPPython folders, Server
 and client has to be ran in two different CLIs or IDEs
